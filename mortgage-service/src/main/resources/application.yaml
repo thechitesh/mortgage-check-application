@@ -1,0 +1,52 @@
+server:
+  port: 1009
+
+spring:
+  application:
+    name: Mortgage Application
+
+
+management:
+  default:
+    metrics:
+      export:
+        enabled: true
+  metrics:
+    distribution:
+      percentiles-histogram:
+        http:
+          server.requests: true
+          client.requests: true
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+        descriptions: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+    jmx:
+      exposure:
+        include: "*"
+  endpoint:
+    prometheus:
+      enabled: true
+  tracing:
+    sampling:
+      probability: 1.0
+
+logging:
+  pattern:
+    correlation: "[${spring.application.name:},%X{traceId:-},%X{spanId:-}] "
+  level:
+    root: INFO
+    org.springframework: INFO
+  file:
+    name: logs/spring-boot-application.log
+
+jwt:
+  secretKey: 48a868a4042f634ac04a117f00a87202131dd7c46c4b32c4acb3edc5e15f4511
+
+mortgage:
+  max-multiplier: 4

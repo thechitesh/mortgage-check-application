@@ -1,0 +1,1222 @@
+2026-02-13T17:16:41.782+01:00  INFO 7745 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Starting MortgageApplication using Java 25.0.1 with PID 7745 (/Users/chitesh/work-space/assingment/mortgage-application/mortgage-service/target/classes started by chitesh in /Users/chitesh/work-space/assingment/mortgage-application)
+2026-02-13T17:16:41.784+01:00  INFO 7745 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-02-13T17:16:42.023+01:00  INFO 7745 --- [Mortgage Application] [main] [Mortgage Application,,] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-13T17:16:42.027+01:00  INFO 7745 --- [Mortgage Application] [main] [Mortgage Application,,] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2026-02-13T17:16:42.321+01:00  INFO 7745 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 1009 (http)
+2026-02-13T17:16:42.326+01:00  INFO 7745 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-13T17:16:42.326+01:00  INFO 7745 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-13T17:16:42.344+01:00  INFO 7745 --- [Mortgage Application] [main] [Mortgage Application,,] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 543 ms
+2026-02-13T17:16:42.577+01:00  INFO 7745 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-13T17:16:42.638+01:00  INFO 7745 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-02-13T17:16:42.639+01:00  INFO 7745 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-13T17:16:42.653+01:00  INFO 7745 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-13T17:16:42.670+01:00  INFO 7745 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-13T17:16:42.837+01:00  INFO 7745 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-13T17:16:42.856+01:00  WARN 7745 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-13T17:16:42.864+01:00  INFO 7745 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-13T17:16:43.201+01:00  INFO 7745 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-13T17:16:43.214+01:00  INFO 7745 --- [Mortgage Application] [main] [Mortgage Application,,] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T17:16:43.244+01:00  INFO 7745 --- [Mortgage Application] [main] [Mortgage Application,,] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-13T17:16:43.244+01:00  WARN 7745 --- [Mortgage Application] [main] [Mortgage Application,,] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-13T17:16:43.290+01:00  WARN 7745 --- [Mortgage Application] [main] [Mortgage Application,,] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-13T17:16:43.399+01:00  INFO 7745 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-13T17:16:43.584+01:00  INFO 7745 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2026-02-13T17:16:43.632+01:00  INFO 7745 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 1009 (http) with context path '/'
+2026-02-13T17:16:43.636+01:00  INFO 7745 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Started MortgageApplication in 2.049 seconds (process running for 2.248)
+2026-02-13T17:17:25.092+01:00  INFO 7745 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-13T17:17:25.092+01:00  INFO 7745 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-13T17:17:25.093+01:00  INFO 7745 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-13T17:26:16.335+01:00  INFO 7745 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-13T17:26:16.340+01:00  INFO 7745 --- [Mortgage Application] [tomcat-shutdown] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-13T17:26:16.343+01:00  INFO 7745 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T17:26:16.345+01:00  INFO 7745 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-13T17:26:16.346+01:00  INFO 7745 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-13T17:40:31.970+01:00  INFO 8516 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Starting MortgageApplication using Java 25.0.1 with PID 8516 (/Users/chitesh/work-space/assingment/mortgage-application/mortgage-service/target/classes started by chitesh in /Users/chitesh/work-space/assingment/mortgage-application)
+2026-02-13T17:40:31.971+01:00  INFO 8516 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-02-13T17:40:32.194+01:00  INFO 8516 --- [Mortgage Application] [main] [Mortgage Application,,] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-13T17:40:32.200+01:00  INFO 8516 --- [Mortgage Application] [main] [Mortgage Application,,] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2026-02-13T17:40:32.499+01:00  INFO 8516 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 1009 (http)
+2026-02-13T17:40:32.504+01:00  INFO 8516 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-13T17:40:32.504+01:00  INFO 8516 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-13T17:40:32.522+01:00  INFO 8516 --- [Mortgage Application] [main] [Mortgage Application,,] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 535 ms
+2026-02-13T17:40:32.753+01:00  INFO 8516 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-13T17:40:32.813+01:00  INFO 8516 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-02-13T17:40:32.813+01:00  INFO 8516 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-13T17:40:32.827+01:00  INFO 8516 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-13T17:40:32.846+01:00  INFO 8516 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-13T17:40:33.018+01:00  INFO 8516 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-13T17:40:33.037+01:00  WARN 8516 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-13T17:40:33.044+01:00  INFO 8516 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-13T17:40:33.382+01:00  INFO 8516 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-13T17:40:33.395+01:00  INFO 8516 --- [Mortgage Application] [main] [Mortgage Application,,] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T17:40:33.426+01:00  INFO 8516 --- [Mortgage Application] [main] [Mortgage Application,,] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-13T17:40:33.426+01:00  WARN 8516 --- [Mortgage Application] [main] [Mortgage Application,,] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-13T17:40:33.463+01:00  WARN 8516 --- [Mortgage Application] [main] [Mortgage Application,,] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-13T17:40:33.582+01:00  INFO 8516 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-13T17:40:33.772+01:00  INFO 8516 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2026-02-13T17:40:33.818+01:00  INFO 8516 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 1009 (http) with context path '/'
+2026-02-13T17:40:33.822+01:00  INFO 8516 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Started MortgageApplication in 2.048 seconds (process running for 2.256)
+2026-02-13T17:42:25.846+01:00  INFO 8516 --- [Mortgage Application] [http-nio-1009-exec-2] [Mortgage Application,,] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-13T17:42:25.846+01:00  INFO 8516 --- [Mortgage Application] [http-nio-1009-exec-2] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-13T17:42:25.847+01:00  INFO 8516 --- [Mortgage Application] [http-nio-1009-exec-2] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-13T17:46:12.108+01:00  WARN 8516 --- [Mortgage Application] [HikariPool-1:housekeeper] [Mortgage Application,,] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m4s956ms).
+2026-02-13T17:46:12.153+01:00  INFO 8516 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-13T17:46:12.158+01:00  INFO 8516 --- [Mortgage Application] [tomcat-shutdown] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-13T17:46:12.161+01:00  INFO 8516 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T17:46:12.163+01:00  INFO 8516 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-13T17:46:12.164+01:00  INFO 8516 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-13T18:03:33.339+01:00  INFO 11549 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Starting MortgageApplication using Java 25.0.1 with PID 11549 (/Users/chitesh/work-space/assingment/mortgage-application/mortgage-service/target/classes started by chitesh in /Users/chitesh/work-space/assingment/mortgage-application)
+2026-02-13T18:03:33.340+01:00  INFO 11549 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-02-13T18:03:33.569+01:00  INFO 11549 --- [Mortgage Application] [main] [Mortgage Application,,] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-13T18:03:33.575+01:00  INFO 11549 --- [Mortgage Application] [main] [Mortgage Application,,] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2026-02-13T18:03:33.875+01:00  INFO 11549 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 1009 (http)
+2026-02-13T18:03:33.880+01:00  INFO 11549 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-13T18:03:33.880+01:00  INFO 11549 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-13T18:03:33.899+01:00  INFO 11549 --- [Mortgage Application] [main] [Mortgage Application,,] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 542 ms
+2026-02-13T18:03:34.141+01:00  INFO 11549 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-13T18:03:34.202+01:00  INFO 11549 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-02-13T18:03:34.202+01:00  INFO 11549 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-13T18:03:34.216+01:00  INFO 11549 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-13T18:03:34.234+01:00  INFO 11549 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-13T18:03:34.400+01:00  INFO 11549 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-13T18:03:34.418+01:00  WARN 11549 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-13T18:03:34.426+01:00  INFO 11549 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-13T18:03:34.772+01:00  INFO 11549 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-13T18:03:34.784+01:00  INFO 11549 --- [Mortgage Application] [main] [Mortgage Application,,] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T18:03:34.815+01:00  INFO 11549 --- [Mortgage Application] [main] [Mortgage Application,,] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-13T18:03:34.815+01:00  WARN 11549 --- [Mortgage Application] [main] [Mortgage Application,,] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-13T18:03:34.855+01:00  WARN 11549 --- [Mortgage Application] [main] [Mortgage Application,,] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-13T18:03:34.972+01:00  INFO 11549 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-13T18:03:35.177+01:00  INFO 11549 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2026-02-13T18:03:35.225+01:00  INFO 11549 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 1009 (http) with context path '/'
+2026-02-13T18:03:35.229+01:00  INFO 11549 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Started MortgageApplication in 2.084 seconds (process running for 2.288)
+2026-02-13T18:07:27.994+01:00  INFO 11549 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-13T18:07:28.001+01:00  INFO 11549 --- [Mortgage Application] [tomcat-shutdown] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-13T18:07:28.005+01:00  INFO 11549 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T18:07:28.007+01:00  INFO 11549 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-13T18:07:28.007+01:00  INFO 11549 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-13T18:08:46.251+01:00  INFO 11729 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Starting MortgageApplication using Java 25.0.1 with PID 11729 (/Users/chitesh/work-space/assingment/mortgage-application/mortgage-service/target/classes started by chitesh in /Users/chitesh/work-space/assingment/mortgage-application)
+2026-02-13T18:08:46.253+01:00  INFO 11729 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-02-13T18:08:46.485+01:00  INFO 11729 --- [Mortgage Application] [main] [Mortgage Application,,] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-13T18:08:46.490+01:00  INFO 11729 --- [Mortgage Application] [main] [Mortgage Application,,] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2026-02-13T18:08:46.792+01:00  INFO 11729 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 1009 (http)
+2026-02-13T18:08:46.797+01:00  INFO 11729 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-13T18:08:46.798+01:00  INFO 11729 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-13T18:08:46.815+01:00  INFO 11729 --- [Mortgage Application] [main] [Mortgage Application,,] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 544 ms
+2026-02-13T18:08:47.052+01:00  INFO 11729 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-13T18:08:47.114+01:00  INFO 11729 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-02-13T18:08:47.115+01:00  INFO 11729 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-13T18:08:47.129+01:00  INFO 11729 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-13T18:08:47.148+01:00  INFO 11729 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-13T18:08:47.322+01:00  INFO 11729 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-13T18:08:47.343+01:00  WARN 11729 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-13T18:08:47.351+01:00  INFO 11729 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-13T18:08:47.698+01:00  INFO 11729 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-13T18:08:47.711+01:00  INFO 11729 --- [Mortgage Application] [main] [Mortgage Application,,] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T18:08:47.742+01:00  INFO 11729 --- [Mortgage Application] [main] [Mortgage Application,,] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-13T18:08:47.742+01:00  WARN 11729 --- [Mortgage Application] [main] [Mortgage Application,,] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-13T18:08:47.782+01:00  WARN 11729 --- [Mortgage Application] [main] [Mortgage Application,,] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-13T18:08:47.917+01:00  INFO 11729 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-13T18:08:48.120+01:00  INFO 11729 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2026-02-13T18:08:48.173+01:00  INFO 11729 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 1009 (http) with context path '/'
+2026-02-13T18:08:48.177+01:00  INFO 11729 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Started MortgageApplication in 2.122 seconds (process running for 2.327)
+2026-02-13T18:09:13.173+01:00  INFO 11729 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-13T18:09:13.179+01:00  INFO 11729 --- [Mortgage Application] [tomcat-shutdown] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-13T18:09:13.183+01:00  INFO 11729 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T18:09:13.185+01:00  INFO 11729 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-13T18:09:13.186+01:00  INFO 11729 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-13T18:13:56.377+01:00  INFO 11882 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Starting MortgageApplication using Java 25.0.1 with PID 11882 (/Users/chitesh/work-space/assingment/mortgage-application/mortgage-service/target/classes started by chitesh in /Users/chitesh/work-space/assingment/mortgage-application)
+2026-02-13T18:13:56.379+01:00  INFO 11882 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-02-13T18:13:56.615+01:00  INFO 11882 --- [Mortgage Application] [main] [Mortgage Application,,] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-13T18:13:56.620+01:00  INFO 11882 --- [Mortgage Application] [main] [Mortgage Application,,] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2026-02-13T18:13:56.925+01:00  INFO 11882 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 1009 (http)
+2026-02-13T18:13:56.930+01:00  INFO 11882 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-13T18:13:56.930+01:00  INFO 11882 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-13T18:13:56.950+01:00  INFO 11882 --- [Mortgage Application] [main] [Mortgage Application,,] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 554 ms
+2026-02-13T18:13:57.188+01:00  INFO 11882 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-13T18:13:57.252+01:00  INFO 11882 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-02-13T18:13:57.252+01:00  INFO 11882 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-13T18:13:57.267+01:00  INFO 11882 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-13T18:13:57.288+01:00  INFO 11882 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-13T18:13:57.458+01:00  INFO 11882 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-13T18:13:57.477+01:00  WARN 11882 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-13T18:13:57.485+01:00  INFO 11882 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-13T18:13:57.832+01:00  INFO 11882 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-13T18:13:57.845+01:00  INFO 11882 --- [Mortgage Application] [main] [Mortgage Application,,] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T18:13:57.876+01:00  INFO 11882 --- [Mortgage Application] [main] [Mortgage Application,,] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-13T18:13:57.877+01:00  WARN 11882 --- [Mortgage Application] [main] [Mortgage Application,,] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-13T18:13:57.916+01:00  WARN 11882 --- [Mortgage Application] [main] [Mortgage Application,,] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-13T18:13:58.035+01:00  INFO 11882 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-13T18:13:58.229+01:00  INFO 11882 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2026-02-13T18:13:58.282+01:00  INFO 11882 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 1009 (http) with context path '/'
+2026-02-13T18:13:58.286+01:00  INFO 11882 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Started MortgageApplication in 2.106 seconds (process running for 2.315)
+2026-02-13T18:20:52.442+01:00  WARN 11882 --- [Mortgage Application] [HikariPool-1:housekeeper] [Mortgage Application,,] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55s39ms).
+2026-02-13T18:21:33.806+01:00  INFO 11882 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-13T18:21:33.812+01:00  INFO 11882 --- [Mortgage Application] [tomcat-shutdown] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-13T18:21:33.815+01:00  INFO 11882 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T18:21:33.816+01:00  INFO 11882 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-13T18:21:33.817+01:00  INFO 11882 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-13T18:29:04.422+01:00  INFO 12334 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Starting MortgageApplication using Java 25.0.1 with PID 12334 (/Users/chitesh/work-space/assingment/mortgage-application/mortgage-service/target/classes started by chitesh in /Users/chitesh/work-space/assingment/mortgage-application)
+2026-02-13T18:29:04.424+01:00  INFO 12334 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-02-13T18:29:04.688+01:00  INFO 12334 --- [Mortgage Application] [main] [Mortgage Application,,] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-13T18:29:04.693+01:00  INFO 12334 --- [Mortgage Application] [main] [Mortgage Application,,] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2026-02-13T18:29:04.991+01:00  INFO 12334 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 1009 (http)
+2026-02-13T18:29:04.996+01:00  INFO 12334 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-13T18:29:04.996+01:00  INFO 12334 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-13T18:29:05.015+01:00  INFO 12334 --- [Mortgage Application] [main] [Mortgage Application,,] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 565 ms
+2026-02-13T18:29:05.255+01:00  INFO 12334 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-13T18:29:05.322+01:00  INFO 12334 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-02-13T18:29:05.322+01:00  INFO 12334 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-13T18:29:05.337+01:00  INFO 12334 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-13T18:29:05.356+01:00  INFO 12334 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-13T18:29:05.541+01:00  INFO 12334 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-13T18:29:05.561+01:00  WARN 12334 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-13T18:29:05.568+01:00  INFO 12334 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-13T18:29:05.914+01:00  INFO 12334 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-13T18:29:05.927+01:00  INFO 12334 --- [Mortgage Application] [main] [Mortgage Application,,] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T18:29:05.962+01:00  INFO 12334 --- [Mortgage Application] [main] [Mortgage Application,,] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-13T18:29:05.962+01:00  WARN 12334 --- [Mortgage Application] [main] [Mortgage Application,,] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-13T18:29:06.004+01:00  WARN 12334 --- [Mortgage Application] [main] [Mortgage Application,,] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-13T18:29:06.131+01:00  INFO 12334 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-13T18:29:06.320+01:00  INFO 12334 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2026-02-13T18:29:06.371+01:00  INFO 12334 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 1009 (http) with context path '/'
+2026-02-13T18:29:06.375+01:00  INFO 12334 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Started MortgageApplication in 2.163 seconds (process running for 2.369)
+2026-02-13T18:31:31.804+01:00  INFO 12334 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-13T18:31:31.811+01:00  INFO 12334 --- [Mortgage Application] [tomcat-shutdown] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-13T18:31:31.814+01:00  INFO 12334 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T18:31:31.816+01:00  INFO 12334 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-13T18:31:31.817+01:00  INFO 12334 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-13T18:31:40.275+01:00  INFO 12525 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Starting MortgageApplication using Java 25.0.1 with PID 12525 (/Users/chitesh/work-space/assingment/mortgage-application/mortgage-service/target/classes started by chitesh in /Users/chitesh/work-space/assingment/mortgage-application)
+2026-02-13T18:31:40.276+01:00  INFO 12525 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-02-13T18:31:40.526+01:00  INFO 12525 --- [Mortgage Application] [main] [Mortgage Application,,] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-13T18:31:40.532+01:00  INFO 12525 --- [Mortgage Application] [main] [Mortgage Application,,] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2026-02-13T18:31:40.847+01:00  INFO 12525 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 1009 (http)
+2026-02-13T18:31:40.852+01:00  INFO 12525 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-13T18:31:40.852+01:00  INFO 12525 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-13T18:31:40.871+01:00  INFO 12525 --- [Mortgage Application] [main] [Mortgage Application,,] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 578 ms
+2026-02-13T18:31:41.107+01:00  INFO 12525 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-13T18:31:41.167+01:00  INFO 12525 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-02-13T18:31:41.168+01:00  INFO 12525 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-13T18:31:41.182+01:00  INFO 12525 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-13T18:31:41.200+01:00  INFO 12525 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-13T18:31:41.365+01:00  INFO 12525 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-13T18:31:41.385+01:00  WARN 12525 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-13T18:31:41.392+01:00  INFO 12525 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-13T18:31:41.732+01:00  INFO 12525 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-13T18:31:41.745+01:00  INFO 12525 --- [Mortgage Application] [main] [Mortgage Application,,] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T18:31:41.775+01:00  INFO 12525 --- [Mortgage Application] [main] [Mortgage Application,,] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-02-13T18:31:41.815+01:00  WARN 12525 --- [Mortgage Application] [main] [Mortgage Application,,] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-13T18:31:41.935+01:00  INFO 12525 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-13T18:31:42.128+01:00  INFO 12525 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2026-02-13T18:31:42.179+01:00  INFO 12525 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 1009 (http) with context path '/'
+2026-02-13T18:31:42.183+01:00  INFO 12525 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Started MortgageApplication in 2.102 seconds (process running for 2.317)
+2026-02-13T18:32:24.585+01:00  INFO 12525 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-13T18:32:24.585+01:00  INFO 12525 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-13T18:32:24.586+01:00  INFO 12525 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-13T18:33:03.647+01:00  INFO 12525 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-13T18:33:03.652+01:00  INFO 12525 --- [Mortgage Application] [tomcat-shutdown] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-13T18:33:03.654+01:00  INFO 12525 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T18:33:03.656+01:00  INFO 12525 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-13T18:33:03.657+01:00  INFO 12525 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-13T18:33:05.965+01:00  INFO 12553 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Starting MortgageApplication using Java 25.0.1 with PID 12553 (/Users/chitesh/work-space/assingment/mortgage-application/mortgage-service/target/classes started by chitesh in /Users/chitesh/work-space/assingment/mortgage-application)
+2026-02-13T18:33:05.966+01:00  INFO 12553 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-02-13T18:33:06.196+01:00  INFO 12553 --- [Mortgage Application] [main] [Mortgage Application,,] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-13T18:33:06.201+01:00  INFO 12553 --- [Mortgage Application] [main] [Mortgage Application,,] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2026-02-13T18:33:06.494+01:00  INFO 12553 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 1009 (http)
+2026-02-13T18:33:06.499+01:00  INFO 12553 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-13T18:33:06.499+01:00  INFO 12553 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-13T18:33:06.518+01:00  INFO 12553 --- [Mortgage Application] [main] [Mortgage Application,,] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 534 ms
+2026-02-13T18:33:06.746+01:00  INFO 12553 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-13T18:33:06.806+01:00  INFO 12553 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-02-13T18:33:06.807+01:00  INFO 12553 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-13T18:33:06.821+01:00  INFO 12553 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-13T18:33:06.839+01:00  INFO 12553 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-13T18:33:07.005+01:00  INFO 12553 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-13T18:33:07.024+01:00  WARN 12553 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-13T18:33:07.031+01:00  INFO 12553 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-13T18:33:07.366+01:00  INFO 12553 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-13T18:33:07.379+01:00  INFO 12553 --- [Mortgage Application] [main] [Mortgage Application,,] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T18:33:07.410+01:00  INFO 12553 --- [Mortgage Application] [main] [Mortgage Application,,] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-13T18:33:07.410+01:00  WARN 12553 --- [Mortgage Application] [main] [Mortgage Application,,] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-13T18:33:07.450+01:00  WARN 12553 --- [Mortgage Application] [main] [Mortgage Application,,] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-13T18:33:07.564+01:00  INFO 12553 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-13T18:33:07.757+01:00  INFO 12553 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2026-02-13T18:33:07.806+01:00  INFO 12553 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 1009 (http) with context path '/'
+2026-02-13T18:33:07.810+01:00  INFO 12553 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Started MortgageApplication in 2.038 seconds (process running for 2.252)
+2026-02-13T18:33:15.919+01:00  INFO 12553 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-13T18:33:15.920+01:00  INFO 12553 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-13T18:33:15.921+01:00  INFO 12553 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-13T18:33:40.662+01:00  INFO 12553 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-13T18:33:40.667+01:00  INFO 12553 --- [Mortgage Application] [tomcat-shutdown] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-13T18:33:40.670+01:00  INFO 12553 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T18:33:40.673+01:00  INFO 12553 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-13T18:33:40.673+01:00  INFO 12553 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-13T18:39:29.994+01:00  INFO 12722 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Starting MortgageApplication using Java 25.0.1 with PID 12722 (/Users/chitesh/work-space/assingment/mortgage-application/mortgage-service/target/classes started by chitesh in /Users/chitesh/work-space/assingment/mortgage-application)
+2026-02-13T18:39:29.996+01:00  INFO 12722 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-02-13T18:39:30.227+01:00  INFO 12722 --- [Mortgage Application] [main] [Mortgage Application,,] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-13T18:39:30.232+01:00  INFO 12722 --- [Mortgage Application] [main] [Mortgage Application,,] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2026-02-13T18:39:30.531+01:00  INFO 12722 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 1009 (http)
+2026-02-13T18:39:30.536+01:00  INFO 12722 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-13T18:39:30.536+01:00  INFO 12722 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-13T18:39:30.555+01:00  INFO 12722 --- [Mortgage Application] [main] [Mortgage Application,,] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 542 ms
+2026-02-13T18:39:30.791+01:00  INFO 12722 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-13T18:39:30.854+01:00  INFO 12722 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-02-13T18:39:30.854+01:00  INFO 12722 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-13T18:39:30.869+01:00  INFO 12722 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-13T18:39:30.887+01:00  INFO 12722 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-13T18:39:31.055+01:00  INFO 12722 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-13T18:39:31.075+01:00  WARN 12722 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-13T18:39:31.082+01:00  INFO 12722 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-13T18:39:31.420+01:00  INFO 12722 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-13T18:39:31.433+01:00  INFO 12722 --- [Mortgage Application] [main] [Mortgage Application,,] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T18:39:31.464+01:00  INFO 12722 --- [Mortgage Application] [main] [Mortgage Application,,] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-13T18:39:31.464+01:00  WARN 12722 --- [Mortgage Application] [main] [Mortgage Application,,] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-13T18:39:31.510+01:00  WARN 12722 --- [Mortgage Application] [main] [Mortgage Application,,] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-13T18:39:31.619+01:00  INFO 12722 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-13T18:39:31.808+01:00  INFO 12722 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2026-02-13T18:39:31.855+01:00  INFO 12722 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 1009 (http) with context path '/'
+2026-02-13T18:39:31.859+01:00  INFO 12722 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Started MortgageApplication in 2.058 seconds (process running for 2.268)
+2026-02-13T18:39:40.848+01:00  INFO 12722 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-13T18:39:40.848+01:00  INFO 12722 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-13T18:39:40.849+01:00  INFO 12722 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-13T18:43:19.388+01:00  INFO 12722 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-13T18:43:19.393+01:00  INFO 12722 --- [Mortgage Application] [tomcat-shutdown] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-13T18:43:19.398+01:00  INFO 12722 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T18:43:19.400+01:00  INFO 12722 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-13T18:43:19.401+01:00  INFO 12722 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-13T19:29:08.131+01:00  INFO 21932 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Starting MortgageApplication using Java 25.0.1 with PID 21932 (/Users/chitesh/work-space/assingment/mortgage-application/mortgage-service/target/classes started by chitesh in /Users/chitesh/work-space/assingment/mortgage-application)
+2026-02-13T19:29:08.132+01:00  INFO 21932 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-02-13T19:29:08.470+01:00  INFO 21932 --- [Mortgage Application] [main] [Mortgage Application,,] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-13T19:29:08.480+01:00  INFO 21932 --- [Mortgage Application] [main] [Mortgage Application,,] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2026-02-13T19:29:08.723+01:00  INFO 21932 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 1009 (http)
+2026-02-13T19:29:08.728+01:00  INFO 21932 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-13T19:29:08.728+01:00  INFO 21932 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-13T19:29:08.748+01:00  INFO 21932 --- [Mortgage Application] [main] [Mortgage Application,,] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 596 ms
+2026-02-13T19:29:09.004+01:00  INFO 21932 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-13T19:29:09.067+01:00  INFO 21932 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:12df84c5-4b49-49b0-a748-75bd7ba4db4b user=SA
+2026-02-13T19:29:09.068+01:00  INFO 21932 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-13T19:29:09.083+01:00  INFO 21932 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-13T19:29:09.104+01:00  INFO 21932 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-13T19:29:09.280+01:00  INFO 21932 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-13T19:29:09.312+01:00  INFO 21932 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:12df84c5-4b49-49b0-a748-75bd7ba4db4b]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: 12DF84C5-4B49-49B0-A748-75BD7BA4DB4B/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-13T19:29:09.471+01:00  INFO 21932 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-13T19:29:09.475+01:00  INFO 21932 --- [Mortgage Application] [main] [Mortgage Application,,] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T19:29:09.509+01:00  INFO 21932 --- [Mortgage Application] [main] [Mortgage Application,,] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-13T19:29:09.509+01:00  WARN 21932 --- [Mortgage Application] [main] [Mortgage Application,,] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-13T19:29:09.538+01:00  WARN 21932 --- [Mortgage Application] [main] [Mortgage Application,,] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-13T19:29:09.671+01:00  INFO 21932 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-13T19:29:09.884+01:00  INFO 21932 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2026-02-13T19:29:09.936+01:00  INFO 21932 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 1009 (http) with context path '/'
+2026-02-13T19:29:09.940+01:00  INFO 21932 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Started MortgageApplication in 2.02 seconds (process running for 2.235)
+2026-02-13T19:29:10.767+01:00  INFO 21932 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-13T19:29:10.768+01:00  INFO 21932 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-13T19:29:10.769+01:00  INFO 21932 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-13T19:31:43.739+01:00  INFO 21932 --- [Mortgage Application] [http-nio-1009-exec-5] [Mortgage Application,,] c.m.mortgage.service.MortgageService     : Monthly payment 95.46
+2026-02-13T19:32:17.600+01:00  INFO 21932 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-13T19:32:17.605+01:00  INFO 21932 --- [Mortgage Application] [tomcat-shutdown] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-13T19:32:17.608+01:00  INFO 21932 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T19:32:17.609+01:00  INFO 21932 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-13T19:32:17.610+01:00  INFO 21932 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-13T19:32:41.143+01:00  INFO 22097 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Starting MortgageApplication using Java 25.0.1 with PID 22097 (/Users/chitesh/work-space/assingment/mortgage-application/mortgage-service/target/classes started by chitesh in /Users/chitesh/work-space/assingment/mortgage-application)
+2026-02-13T19:32:41.144+01:00  INFO 22097 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-02-13T19:32:41.449+01:00  INFO 22097 --- [Mortgage Application] [main] [Mortgage Application,,] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-13T19:32:41.458+01:00  INFO 22097 --- [Mortgage Application] [main] [Mortgage Application,,] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2026-02-13T19:32:41.686+01:00  INFO 22097 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 1009 (http)
+2026-02-13T19:32:41.691+01:00  INFO 22097 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-13T19:32:41.692+01:00  INFO 22097 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-13T19:32:41.711+01:00  INFO 22097 --- [Mortgage Application] [main] [Mortgage Application,,] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 550 ms
+2026-02-13T19:32:41.961+01:00  INFO 22097 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-13T19:32:42.022+01:00  INFO 22097 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:9b9cc260-eebe-4582-9b1d-692f41d99641 user=SA
+2026-02-13T19:32:42.023+01:00  INFO 22097 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-13T19:32:42.037+01:00  INFO 22097 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-13T19:32:42.056+01:00  INFO 22097 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-13T19:32:42.227+01:00  INFO 22097 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-13T19:32:42.258+01:00  INFO 22097 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:9b9cc260-eebe-4582-9b1d-692f41d99641]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: 9B9CC260-EEBE-4582-9B1D-692F41D99641/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-13T19:32:42.412+01:00  INFO 22097 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-13T19:32:42.416+01:00  INFO 22097 --- [Mortgage Application] [main] [Mortgage Application,,] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T19:32:42.451+01:00  INFO 22097 --- [Mortgage Application] [main] [Mortgage Application,,] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-13T19:32:42.452+01:00  WARN 22097 --- [Mortgage Application] [main] [Mortgage Application,,] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-13T19:32:42.485+01:00  WARN 22097 --- [Mortgage Application] [main] [Mortgage Application,,] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-13T19:32:42.611+01:00  INFO 22097 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-13T19:32:42.800+01:00  INFO 22097 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2026-02-13T19:32:42.847+01:00  INFO 22097 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 1009 (http) with context path '/'
+2026-02-13T19:32:42.852+01:00  INFO 22097 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Started MortgageApplication in 1.899 seconds (process running for 2.107)
+2026-02-13T19:32:44.770+01:00  INFO 22097 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-13T19:32:44.770+01:00  INFO 22097 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-13T19:32:44.771+01:00  INFO 22097 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-13T19:35:22.377+01:00  INFO 22097 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-13T19:35:22.382+01:00  INFO 22097 --- [Mortgage Application] [tomcat-shutdown] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-13T19:35:22.385+01:00  INFO 22097 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T19:35:22.385+01:00  INFO 22097 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-13T19:35:22.386+01:00  INFO 22097 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-13T19:39:16.073+01:00  INFO 22544 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Starting MortgageApplication using Java 25.0.1 with PID 22544 (/Users/chitesh/work-space/assingment/mortgage-application/mortgage-service/target/classes started by chitesh in /Users/chitesh/work-space/assingment/mortgage-application)
+2026-02-13T19:39:16.075+01:00  INFO 22544 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-02-13T19:39:16.370+01:00  INFO 22544 --- [Mortgage Application] [main] [Mortgage Application,,] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-13T19:39:16.379+01:00  INFO 22544 --- [Mortgage Application] [main] [Mortgage Application,,] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2026-02-13T19:39:16.604+01:00  INFO 22544 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 1009 (http)
+2026-02-13T19:39:16.609+01:00  INFO 22544 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-13T19:39:16.610+01:00  INFO 22544 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-13T19:39:16.628+01:00  INFO 22544 --- [Mortgage Application] [main] [Mortgage Application,,] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 537 ms
+2026-02-13T19:39:16.868+01:00  INFO 22544 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-13T19:39:16.929+01:00  INFO 22544 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:e647545c-7ae8-4bb1-9c47-76e4d7ff54fb user=SA
+2026-02-13T19:39:16.929+01:00  INFO 22544 --- [Mortgage Application] [main] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-13T19:39:16.943+01:00  INFO 22544 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-13T19:39:16.962+01:00  INFO 22544 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-13T19:39:17.136+01:00  INFO 22544 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-13T19:39:17.167+01:00  INFO 22544 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:e647545c-7ae8-4bb1-9c47-76e4d7ff54fb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: E647545C-7AE8-4BB1-9C47-76E4D7FF54FB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-13T19:39:17.322+01:00  INFO 22544 --- [Mortgage Application] [main] [Mortgage Application,,] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-13T19:39:17.326+01:00  INFO 22544 --- [Mortgage Application] [main] [Mortgage Application,,] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T19:39:17.361+01:00  INFO 22544 --- [Mortgage Application] [main] [Mortgage Application,,] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-13T19:39:17.361+01:00  WARN 22544 --- [Mortgage Application] [main] [Mortgage Application,,] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-13T19:39:17.393+01:00  WARN 22544 --- [Mortgage Application] [main] [Mortgage Application,,] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-13T19:39:17.522+01:00  INFO 22544 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-13T19:39:17.711+01:00  INFO 22544 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2026-02-13T19:39:17.760+01:00  INFO 22544 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 1009 (http) with context path '/'
+2026-02-13T19:39:17.764+01:00  INFO 22544 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Started MortgageApplication in 1.886 seconds (process running for 2.094)
+2026-02-13T19:39:18.779+01:00  INFO 22544 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-13T19:39:18.779+01:00  INFO 22544 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-13T19:39:18.780+01:00  INFO 22544 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-13T19:47:19.073+01:00  INFO 22544 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-13T19:47:19.077+01:00  INFO 22544 --- [Mortgage Application] [tomcat-shutdown] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-13T19:47:19.080+01:00  INFO 22544 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T19:47:19.081+01:00  INFO 22544 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-13T19:47:19.082+01:00  INFO 22544 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-13T19:47:22.446+01:00  INFO 22993 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Starting MortgageApplication using Java 25.0.1 with PID 22993 (/Users/chitesh/work-space/assingment/mortgage-application/mortgage-service/target/classes started by chitesh in /Users/chitesh/work-space/assingment/mortgage-application)
+2026-02-13T19:47:22.447+01:00  INFO 22993 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-02-13T19:47:22.898+01:00  INFO 22993 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 1009 (http)
+2026-02-13T19:47:22.903+01:00  INFO 22993 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-13T19:47:22.903+01:00  INFO 22993 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-13T19:47:22.921+01:00  INFO 22993 --- [Mortgage Application] [main] [Mortgage Application,,] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 456 ms
+2026-02-13T19:47:23.154+01:00  INFO 22993 --- [Mortgage Application] [main] [Mortgage Application,,] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-13T19:47:23.155+01:00  WARN 22993 --- [Mortgage Application] [main] [Mortgage Application,,] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-13T19:47:23.278+01:00  INFO 22993 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-13T19:47:23.449+01:00  WARN 22993 --- [Mortgage Application] [PrometheusPushGatewayManager.PushGatewayTaskScheduler-1] [Mortgage Application,,] s.b.m.m.e.p.PrometheusPushGatewayManager : Unexpected exception thrown by POST of metrics to Prometheus Pushgateway
+
+java.io.IOException: Failed to push metrics to the Prometheus Pushgateway on http://localhost:9091: Connection refused
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:234) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.pushAdd(PushGateway.java:152) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at org.springframework.boot.micrometer.metrics.export.prometheus.PrometheusPushGatewayManager.post(PrometheusPushGatewayManager.java:79) ~[spring-boot-micrometer-metrics-4.0.2.jar:4.0.2]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:639) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:543) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:659) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:161) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:516) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:604) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:276) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:380) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:393) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1030) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:963) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:899) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:872) ~[na:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:198) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	... 10 common frames omitted
+
+2026-02-13T19:47:23.467+01:00  INFO 22993 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2026-02-13T19:47:23.512+01:00  INFO 22993 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 1009 (http) with context path '/'
+2026-02-13T19:47:23.516+01:00  INFO 22993 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Started MortgageApplication in 1.264 seconds (process running for 1.477)
+2026-02-13T19:47:24.771+01:00  INFO 22993 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-13T19:47:24.771+01:00  INFO 22993 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-13T19:47:24.772+01:00  INFO 22993 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-02-13T19:48:23.443+01:00  WARN 22993 --- [Mortgage Application] [PrometheusPushGatewayManager.PushGatewayTaskScheduler-1] [Mortgage Application,,] s.b.m.m.e.p.PrometheusPushGatewayManager : Unexpected exception thrown by POST of metrics to Prometheus Pushgateway
+
+java.io.IOException: Failed to push metrics to the Prometheus Pushgateway on http://localhost:9091: Connection refused
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:234) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.pushAdd(PushGateway.java:152) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at org.springframework.boot.micrometer.metrics.export.prometheus.PrometheusPushGatewayManager.post(PrometheusPushGatewayManager.java:79) ~[spring-boot-micrometer-metrics-4.0.2.jar:4.0.2]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:639) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:550) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:659) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:161) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:516) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:604) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:276) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:380) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:393) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1030) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:963) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:899) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:872) ~[na:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:198) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	... 10 common frames omitted
+
+2026-02-13T19:49:23.440+01:00  WARN 22993 --- [Mortgage Application] [PrometheusPushGatewayManager.PushGatewayTaskScheduler-1] [Mortgage Application,,] s.b.m.m.e.p.PrometheusPushGatewayManager : Unexpected exception thrown by POST of metrics to Prometheus Pushgateway
+
+java.io.IOException: Failed to push metrics to the Prometheus Pushgateway on http://localhost:9091: Connection refused
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:234) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.pushAdd(PushGateway.java:152) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at org.springframework.boot.micrometer.metrics.export.prometheus.PrometheusPushGatewayManager.post(PrometheusPushGatewayManager.java:79) ~[spring-boot-micrometer-metrics-4.0.2.jar:4.0.2]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:639) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:550) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:659) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:161) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:516) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:604) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:276) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:380) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:393) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1030) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:963) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:899) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:872) ~[na:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:198) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	... 10 common frames omitted
+
+2026-02-13T19:49:38.045+01:00  INFO 22993 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-13T19:49:38.049+01:00  INFO 22993 --- [Mortgage Application] [tomcat-shutdown] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-13T19:49:39.582+01:00  INFO 23100 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Starting MortgageApplication using Java 25.0.1 with PID 23100 (/Users/chitesh/work-space/assingment/mortgage-application/mortgage-service/target/classes started by chitesh in /Users/chitesh/work-space/assingment/mortgage-application)
+2026-02-13T19:49:39.583+01:00  INFO 23100 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-02-13T19:49:40.039+01:00  INFO 23100 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 1009 (http)
+2026-02-13T19:49:40.044+01:00  INFO 23100 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-13T19:49:40.044+01:00  INFO 23100 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-13T19:49:40.063+01:00  INFO 23100 --- [Mortgage Application] [main] [Mortgage Application,,] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 463 ms
+2026-02-13T19:49:40.304+01:00  INFO 23100 --- [Mortgage Application] [main] [Mortgage Application,,] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-13T19:49:40.305+01:00  WARN 23100 --- [Mortgage Application] [main] [Mortgage Application,,] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-13T19:49:40.430+01:00  INFO 23100 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-13T19:49:40.564+01:00  WARN 23100 --- [Mortgage Application] [PrometheusPushGatewayManager.PushGatewayTaskScheduler-1] [Mortgage Application,,] s.b.m.m.e.p.PrometheusPushGatewayManager : Unexpected exception thrown by POST of metrics to Prometheus Pushgateway
+
+java.io.IOException: Failed to push metrics to the Prometheus Pushgateway on http://localhost:9091: Connection refused
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:234) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.pushAdd(PushGateway.java:152) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at org.springframework.boot.micrometer.metrics.export.prometheus.PrometheusPushGatewayManager.post(PrometheusPushGatewayManager.java:79) ~[spring-boot-micrometer-metrics-4.0.2.jar:4.0.2]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:639) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:543) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:659) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:161) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:516) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:604) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:276) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:380) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:393) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1030) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:963) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:899) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:872) ~[na:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:198) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	... 10 common frames omitted
+
+2026-02-13T19:49:40.579+01:00  INFO 23100 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2026-02-13T19:49:40.614+01:00  INFO 23100 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 1009 (http) with context path '/'
+2026-02-13T19:49:40.618+01:00  INFO 23100 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Started MortgageApplication in 1.236 seconds (process running for 1.43)
+2026-02-13T19:49:40.758+01:00  INFO 23100 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-13T19:49:40.758+01:00  INFO 23100 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-13T19:49:40.758+01:00  INFO 23100 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-02-13T19:50:40.560+01:00  WARN 23100 --- [Mortgage Application] [PrometheusPushGatewayManager.PushGatewayTaskScheduler-1] [Mortgage Application,,] s.b.m.m.e.p.PrometheusPushGatewayManager : Unexpected exception thrown by POST of metrics to Prometheus Pushgateway
+
+java.io.IOException: Failed to push metrics to the Prometheus Pushgateway on http://localhost:9091: Connection refused
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:234) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.pushAdd(PushGateway.java:152) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at org.springframework.boot.micrometer.metrics.export.prometheus.PrometheusPushGatewayManager.post(PrometheusPushGatewayManager.java:79) ~[spring-boot-micrometer-metrics-4.0.2.jar:4.0.2]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:639) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:550) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:659) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:161) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:516) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:604) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:276) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:380) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:393) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1030) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:963) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:899) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:872) ~[na:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:198) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	... 10 common frames omitted
+
+2026-02-13T19:51:40.556+01:00  WARN 23100 --- [Mortgage Application] [PrometheusPushGatewayManager.PushGatewayTaskScheduler-1] [Mortgage Application,,] s.b.m.m.e.p.PrometheusPushGatewayManager : Unexpected exception thrown by POST of metrics to Prometheus Pushgateway
+
+java.io.IOException: Failed to push metrics to the Prometheus Pushgateway on http://localhost:9091: Connection refused
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:234) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.pushAdd(PushGateway.java:152) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at org.springframework.boot.micrometer.metrics.export.prometheus.PrometheusPushGatewayManager.post(PrometheusPushGatewayManager.java:79) ~[spring-boot-micrometer-metrics-4.0.2.jar:4.0.2]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:639) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:550) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:659) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:161) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:516) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:604) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:276) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:380) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:393) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1030) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:963) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:899) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:872) ~[na:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:198) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	... 10 common frames omitted
+
+2026-02-13T19:52:37.621+01:00  INFO 23100 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-13T19:52:37.624+01:00  INFO 23100 --- [Mortgage Application] [tomcat-shutdown] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-13T19:52:39.162+01:00  INFO 23220 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Starting MortgageApplication using Java 25.0.1 with PID 23220 (/Users/chitesh/work-space/assingment/mortgage-application/mortgage-service/target/classes started by chitesh in /Users/chitesh/work-space/assingment/mortgage-application)
+2026-02-13T19:52:39.163+01:00  INFO 23220 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-02-13T19:52:39.629+01:00  INFO 23220 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 1009 (http)
+2026-02-13T19:52:39.634+01:00  INFO 23220 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-13T19:52:39.635+01:00  INFO 23220 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-13T19:52:39.652+01:00  INFO 23220 --- [Mortgage Application] [main] [Mortgage Application,,] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 472 ms
+2026-02-13T19:52:39.881+01:00  INFO 23220 --- [Mortgage Application] [main] [Mortgage Application,,] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-13T19:52:39.881+01:00  WARN 23220 --- [Mortgage Application] [main] [Mortgage Application,,] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-13T19:52:40.003+01:00  INFO 23220 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-13T19:52:40.155+01:00  INFO 23220 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2026-02-13T19:52:40.157+01:00  WARN 23220 --- [Mortgage Application] [PrometheusPushGatewayManager.PushGatewayTaskScheduler-1] [Mortgage Application,,] s.b.m.m.e.p.PrometheusPushGatewayManager : Unexpected exception thrown by POST of metrics to Prometheus Pushgateway
+
+java.io.IOException: Failed to push metrics to the Prometheus Pushgateway on http://http: http
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:234) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.pushAdd(PushGateway.java:152) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at org.springframework.boot.micrometer.metrics.export.prometheus.PrometheusPushGatewayManager.post(PrometheusPushGatewayManager.java:79) ~[spring-boot-micrometer-metrics-4.0.2.jar:4.0.2]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.net.UnknownHostException: http
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:569) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:659) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:161) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:516) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:604) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:276) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:380) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:393) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1030) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:963) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:899) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:872) ~[na:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:198) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	... 10 common frames omitted
+
+2026-02-13T19:52:40.190+01:00  INFO 23220 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 1009 (http) with context path '/'
+2026-02-13T19:52:40.194+01:00  INFO 23220 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Started MortgageApplication in 1.222 seconds (process running for 1.433)
+2026-02-13T19:52:40.777+01:00  INFO 23220 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-13T19:52:40.777+01:00  INFO 23220 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-13T19:52:40.778+01:00  INFO 23220 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-13T19:53:00.636+01:00  INFO 23220 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-13T19:53:00.639+01:00  INFO 23220 --- [Mortgage Application] [tomcat-shutdown] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-13T19:53:01.253+01:00  INFO 23235 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Starting MortgageApplication using Java 25.0.1 with PID 23235 (/Users/chitesh/work-space/assingment/mortgage-application/mortgage-service/target/classes started by chitesh in /Users/chitesh/work-space/assingment/mortgage-application)
+2026-02-13T19:53:01.255+01:00  INFO 23235 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-02-13T19:53:01.693+01:00  INFO 23235 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 1009 (http)
+2026-02-13T19:53:01.698+01:00  INFO 23235 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-13T19:53:01.698+01:00  INFO 23235 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-13T19:53:01.715+01:00  INFO 23235 --- [Mortgage Application] [main] [Mortgage Application,,] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 442 ms
+2026-02-13T19:53:01.944+01:00  INFO 23235 --- [Mortgage Application] [main] [Mortgage Application,,] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-13T19:53:01.944+01:00  WARN 23235 --- [Mortgage Application] [main] [Mortgage Application,,] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-13T19:53:02.066+01:00  INFO 23235 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-13T19:53:02.204+01:00  WARN 23235 --- [Mortgage Application] [PrometheusPushGatewayManager.PushGatewayTaskScheduler-1] [Mortgage Application,,] s.b.m.m.e.p.PrometheusPushGatewayManager : Unexpected exception thrown by POST of metrics to Prometheus Pushgateway
+
+java.io.IOException: Failed to push metrics to the Prometheus Pushgateway on http://localhost:9090: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:234) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.pushAdd(PushGateway.java:152) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at org.springframework.boot.micrometer.metrics.export.prometheus.PrometheusPushGatewayManager.post(PrometheusPushGatewayManager.java:79) ~[spring-boot-micrometer-metrics-4.0.2.jar:4.0.2]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.io.IOException: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:219) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	... 10 common frames omitted
+
+2026-02-13T19:53:02.216+01:00  INFO 23235 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2026-02-13T19:53:02.250+01:00  INFO 23235 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 1009 (http) with context path '/'
+2026-02-13T19:53:02.253+01:00  INFO 23235 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Started MortgageApplication in 1.19 seconds (process running for 1.384)
+2026-02-13T19:53:02.768+01:00  INFO 23235 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-13T19:53:02.768+01:00  INFO 23235 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-13T19:53:02.769+01:00  INFO 23235 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-13T19:54:02.241+01:00  WARN 23235 --- [Mortgage Application] [PrometheusPushGatewayManager.PushGatewayTaskScheduler-1] [Mortgage Application,,] s.b.m.m.e.p.PrometheusPushGatewayManager : Unexpected exception thrown by POST of metrics to Prometheus Pushgateway
+
+java.io.IOException: Failed to push metrics to the Prometheus Pushgateway on http://localhost:9090: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:234) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.pushAdd(PushGateway.java:152) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at org.springframework.boot.micrometer.metrics.export.prometheus.PrometheusPushGatewayManager.post(PrometheusPushGatewayManager.java:79) ~[spring-boot-micrometer-metrics-4.0.2.jar:4.0.2]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.io.IOException: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:219) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	... 10 common frames omitted
+
+2026-02-13T19:55:02.205+01:00  WARN 23235 --- [Mortgage Application] [PrometheusPushGatewayManager.PushGatewayTaskScheduler-1] [Mortgage Application,,] s.b.m.m.e.p.PrometheusPushGatewayManager : Unexpected exception thrown by POST of metrics to Prometheus Pushgateway
+
+java.io.IOException: Failed to push metrics to the Prometheus Pushgateway on http://localhost:9090: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:234) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.pushAdd(PushGateway.java:152) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at org.springframework.boot.micrometer.metrics.export.prometheus.PrometheusPushGatewayManager.post(PrometheusPushGatewayManager.java:79) ~[spring-boot-micrometer-metrics-4.0.2.jar:4.0.2]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.io.IOException: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:219) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	... 10 common frames omitted
+
+2026-02-13T19:56:02.208+01:00  WARN 23235 --- [Mortgage Application] [PrometheusPushGatewayManager.PushGatewayTaskScheduler-1] [Mortgage Application,,] s.b.m.m.e.p.PrometheusPushGatewayManager : Unexpected exception thrown by POST of metrics to Prometheus Pushgateway
+
+java.io.IOException: Failed to push metrics to the Prometheus Pushgateway on http://localhost:9090: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:234) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.pushAdd(PushGateway.java:152) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at org.springframework.boot.micrometer.metrics.export.prometheus.PrometheusPushGatewayManager.post(PrometheusPushGatewayManager.java:79) ~[spring-boot-micrometer-metrics-4.0.2.jar:4.0.2]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.io.IOException: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:219) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	... 10 common frames omitted
+
+2026-02-13T19:57:02.205+01:00  WARN 23235 --- [Mortgage Application] [PrometheusPushGatewayManager.PushGatewayTaskScheduler-1] [Mortgage Application,,] s.b.m.m.e.p.PrometheusPushGatewayManager : Unexpected exception thrown by POST of metrics to Prometheus Pushgateway
+
+java.io.IOException: Failed to push metrics to the Prometheus Pushgateway on http://localhost:9090: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:234) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.pushAdd(PushGateway.java:152) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at org.springframework.boot.micrometer.metrics.export.prometheus.PrometheusPushGatewayManager.post(PrometheusPushGatewayManager.java:79) ~[spring-boot-micrometer-metrics-4.0.2.jar:4.0.2]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.io.IOException: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:219) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	... 10 common frames omitted
+
+2026-02-13T19:58:02.200+01:00  WARN 23235 --- [Mortgage Application] [PrometheusPushGatewayManager.PushGatewayTaskScheduler-1] [Mortgage Application,,] s.b.m.m.e.p.PrometheusPushGatewayManager : Unexpected exception thrown by POST of metrics to Prometheus Pushgateway
+
+java.io.IOException: Failed to push metrics to the Prometheus Pushgateway on http://localhost:9090: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:234) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.pushAdd(PushGateway.java:152) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at org.springframework.boot.micrometer.metrics.export.prometheus.PrometheusPushGatewayManager.post(PrometheusPushGatewayManager.java:79) ~[spring-boot-micrometer-metrics-4.0.2.jar:4.0.2]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.io.IOException: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:219) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	... 10 common frames omitted
+
+2026-02-13T19:59:02.201+01:00  WARN 23235 --- [Mortgage Application] [PrometheusPushGatewayManager.PushGatewayTaskScheduler-1] [Mortgage Application,,] s.b.m.m.e.p.PrometheusPushGatewayManager : Unexpected exception thrown by POST of metrics to Prometheus Pushgateway
+
+java.io.IOException: Failed to push metrics to the Prometheus Pushgateway on http://localhost:9090: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:234) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.pushAdd(PushGateway.java:152) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at org.springframework.boot.micrometer.metrics.export.prometheus.PrometheusPushGatewayManager.post(PrometheusPushGatewayManager.java:79) ~[spring-boot-micrometer-metrics-4.0.2.jar:4.0.2]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.io.IOException: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:219) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	... 10 common frames omitted
+
+2026-02-13T20:00:02.203+01:00  WARN 23235 --- [Mortgage Application] [PrometheusPushGatewayManager.PushGatewayTaskScheduler-1] [Mortgage Application,,] s.b.m.m.e.p.PrometheusPushGatewayManager : Unexpected exception thrown by POST of metrics to Prometheus Pushgateway
+
+java.io.IOException: Failed to push metrics to the Prometheus Pushgateway on http://localhost:9090: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:234) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.pushAdd(PushGateway.java:152) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at org.springframework.boot.micrometer.metrics.export.prometheus.PrometheusPushGatewayManager.post(PrometheusPushGatewayManager.java:79) ~[spring-boot-micrometer-metrics-4.0.2.jar:4.0.2]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.io.IOException: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:219) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	... 10 common frames omitted
+
+2026-02-13T20:01:02.206+01:00  WARN 23235 --- [Mortgage Application] [PrometheusPushGatewayManager.PushGatewayTaskScheduler-1] [Mortgage Application,,] s.b.m.m.e.p.PrometheusPushGatewayManager : Unexpected exception thrown by POST of metrics to Prometheus Pushgateway
+
+java.io.IOException: Failed to push metrics to the Prometheus Pushgateway on http://localhost:9090: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:234) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.pushAdd(PushGateway.java:152) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at org.springframework.boot.micrometer.metrics.export.prometheus.PrometheusPushGatewayManager.post(PrometheusPushGatewayManager.java:79) ~[spring-boot-micrometer-metrics-4.0.2.jar:4.0.2]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.io.IOException: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:219) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	... 10 common frames omitted
+
+2026-02-13T20:02:02.199+01:00  WARN 23235 --- [Mortgage Application] [PrometheusPushGatewayManager.PushGatewayTaskScheduler-1] [Mortgage Application,,] s.b.m.m.e.p.PrometheusPushGatewayManager : Unexpected exception thrown by POST of metrics to Prometheus Pushgateway
+
+java.io.IOException: Failed to push metrics to the Prometheus Pushgateway on http://localhost:9090: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:234) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.pushAdd(PushGateway.java:152) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at org.springframework.boot.micrometer.metrics.export.prometheus.PrometheusPushGatewayManager.post(PrometheusPushGatewayManager.java:79) ~[spring-boot-micrometer-metrics-4.0.2.jar:4.0.2]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.io.IOException: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:219) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	... 10 common frames omitted
+
+2026-02-13T20:03:02.203+01:00  WARN 23235 --- [Mortgage Application] [PrometheusPushGatewayManager.PushGatewayTaskScheduler-1] [Mortgage Application,,] s.b.m.m.e.p.PrometheusPushGatewayManager : Unexpected exception thrown by POST of metrics to Prometheus Pushgateway
+
+java.io.IOException: Failed to push metrics to the Prometheus Pushgateway on http://localhost:9090: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:234) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.pushAdd(PushGateway.java:152) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at org.springframework.boot.micrometer.metrics.export.prometheus.PrometheusPushGatewayManager.post(PrometheusPushGatewayManager.java:79) ~[spring-boot-micrometer-metrics-4.0.2.jar:4.0.2]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.io.IOException: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:219) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	... 10 common frames omitted
+
+2026-02-13T20:04:02.205+01:00  WARN 23235 --- [Mortgage Application] [PrometheusPushGatewayManager.PushGatewayTaskScheduler-1] [Mortgage Application,,] s.b.m.m.e.p.PrometheusPushGatewayManager : Unexpected exception thrown by POST of metrics to Prometheus Pushgateway
+
+java.io.IOException: Failed to push metrics to the Prometheus Pushgateway on http://localhost:9090: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:234) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.pushAdd(PushGateway.java:152) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at org.springframework.boot.micrometer.metrics.export.prometheus.PrometheusPushGatewayManager.post(PrometheusPushGatewayManager.java:79) ~[spring-boot-micrometer-metrics-4.0.2.jar:4.0.2]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.io.IOException: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:219) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	... 10 common frames omitted
+
+2026-02-13T20:05:02.204+01:00  WARN 23235 --- [Mortgage Application] [PrometheusPushGatewayManager.PushGatewayTaskScheduler-1] [Mortgage Application,,] s.b.m.m.e.p.PrometheusPushGatewayManager : Unexpected exception thrown by POST of metrics to Prometheus Pushgateway
+
+java.io.IOException: Failed to push metrics to the Prometheus Pushgateway on http://localhost:9090: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:234) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.pushAdd(PushGateway.java:152) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at org.springframework.boot.micrometer.metrics.export.prometheus.PrometheusPushGatewayManager.post(PrometheusPushGatewayManager.java:79) ~[spring-boot-micrometer-metrics-4.0.2.jar:4.0.2]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.io.IOException: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:219) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	... 10 common frames omitted
+
+2026-02-13T20:05:13.597+01:00  INFO 23235 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-13T20:05:13.601+01:00  INFO 23235 --- [Mortgage Application] [tomcat-shutdown] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-13T20:05:34.261+01:00  INFO 23855 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Starting MortgageApplication using Java 25.0.1 with PID 23855 (/Users/chitesh/work-space/assingment/mortgage-application/mortgage-service/target/classes started by chitesh in /Users/chitesh/work-space/assingment/mortgage-application)
+2026-02-13T20:05:34.262+01:00  INFO 23855 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-02-13T20:05:34.703+01:00  INFO 23855 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 1009 (http)
+2026-02-13T20:05:34.708+01:00  INFO 23855 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-13T20:05:34.708+01:00  INFO 23855 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-13T20:05:34.726+01:00  INFO 23855 --- [Mortgage Application] [main] [Mortgage Application,,] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 446 ms
+2026-02-13T20:05:34.967+01:00  INFO 23855 --- [Mortgage Application] [main] [Mortgage Application,,] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-13T20:05:34.967+01:00  WARN 23855 --- [Mortgage Application] [main] [Mortgage Application,,] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-13T20:05:35.093+01:00  INFO 23855 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-13T20:05:35.234+01:00  WARN 23855 --- [Mortgage Application] [PrometheusPushGatewayManager.PushGatewayTaskScheduler-1] [Mortgage Application,,] s.b.m.m.e.p.PrometheusPushGatewayManager : Unexpected exception thrown by POST of metrics to Prometheus Pushgateway
+
+java.io.IOException: Failed to push metrics to the Prometheus Pushgateway on http://localhost:9090: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:234) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.pushAdd(PushGateway.java:152) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at org.springframework.boot.micrometer.metrics.export.prometheus.PrometheusPushGatewayManager.post(PrometheusPushGatewayManager.java:79) ~[spring-boot-micrometer-metrics-4.0.2.jar:4.0.2]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.io.IOException: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:219) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	... 10 common frames omitted
+
+2026-02-13T20:05:35.245+01:00  INFO 23855 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2026-02-13T20:05:35.280+01:00  INFO 23855 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 1009 (http) with context path '/'
+2026-02-13T20:05:35.283+01:00  INFO 23855 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Started MortgageApplication in 1.221 seconds (process running for 1.42)
+2026-02-13T20:05:37.191+01:00  INFO 23855 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-13T20:05:37.191+01:00  INFO 23855 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-13T20:05:37.192+01:00  INFO 23855 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-13T20:05:55.916+01:00  INFO 23855 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-13T20:05:55.920+01:00  INFO 23855 --- [Mortgage Application] [tomcat-shutdown] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-13T20:06:12.935+01:00  INFO 23939 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Starting MortgageApplication using Java 25.0.1 with PID 23939 (/Users/chitesh/work-space/assingment/mortgage-application/mortgage-service/target/classes started by chitesh in /Users/chitesh/work-space/assingment/mortgage-application)
+2026-02-13T20:06:12.936+01:00  INFO 23939 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-02-13T20:06:13.387+01:00  INFO 23939 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 1009 (http)
+2026-02-13T20:06:13.393+01:00  INFO 23939 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-13T20:06:13.393+01:00  INFO 23939 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-13T20:06:13.411+01:00  INFO 23939 --- [Mortgage Application] [main] [Mortgage Application,,] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 457 ms
+2026-02-13T20:06:13.648+01:00  INFO 23939 --- [Mortgage Application] [main] [Mortgage Application,,] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-13T20:06:13.648+01:00  WARN 23939 --- [Mortgage Application] [main] [Mortgage Application,,] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-13T20:06:13.775+01:00  INFO 23939 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-13T20:06:13.923+01:00  WARN 23939 --- [Mortgage Application] [PrometheusPushGatewayManager.PushGatewayTaskScheduler-1] [Mortgage Application,,] s.b.m.m.e.p.PrometheusPushGatewayManager : Unexpected exception thrown by POST of metrics to Prometheus Pushgateway
+
+java.io.IOException: Failed to push metrics to the Prometheus Pushgateway on http://localhost:9090: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:234) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.pushAdd(PushGateway.java:152) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at org.springframework.boot.micrometer.metrics.export.prometheus.PrometheusPushGatewayManager.post(PrometheusPushGatewayManager.java:79) ~[spring-boot-micrometer-metrics-4.0.2.jar:4.0.2]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.io.IOException: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:219) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	... 10 common frames omitted
+
+2026-02-13T20:06:13.935+01:00  INFO 23939 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2026-02-13T20:06:13.975+01:00  INFO 23939 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 1009 (http) with context path '/'
+2026-02-13T20:06:13.979+01:00  INFO 23939 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Started MortgageApplication in 1.242 seconds (process running for 1.454)
+2026-02-13T20:06:15.178+01:00  INFO 23939 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-13T20:06:15.178+01:00  INFO 23939 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-13T20:06:15.179+01:00  INFO 23939 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-13T20:07:13.960+01:00  WARN 23939 --- [Mortgage Application] [PrometheusPushGatewayManager.PushGatewayTaskScheduler-1] [Mortgage Application,,] s.b.m.m.e.p.PrometheusPushGatewayManager : Unexpected exception thrown by POST of metrics to Prometheus Pushgateway
+
+java.io.IOException: Failed to push metrics to the Prometheus Pushgateway on http://localhost:9090: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:234) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.pushAdd(PushGateway.java:152) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at org.springframework.boot.micrometer.metrics.export.prometheus.PrometheusPushGatewayManager.post(PrometheusPushGatewayManager.java:79) ~[spring-boot-micrometer-metrics-4.0.2.jar:4.0.2]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.io.IOException: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:219) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	... 10 common frames omitted
+
+2026-02-13T20:08:13.923+01:00  WARN 23939 --- [Mortgage Application] [PrometheusPushGatewayManager.PushGatewayTaskScheduler-1] [Mortgage Application,,] s.b.m.m.e.p.PrometheusPushGatewayManager : Unexpected exception thrown by POST of metrics to Prometheus Pushgateway
+
+java.io.IOException: Failed to push metrics to the Prometheus Pushgateway on http://localhost:9090: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:234) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.pushAdd(PushGateway.java:152) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at org.springframework.boot.micrometer.metrics.export.prometheus.PrometheusPushGatewayManager.post(PrometheusPushGatewayManager.java:79) ~[spring-boot-micrometer-metrics-4.0.2.jar:4.0.2]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.io.IOException: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:219) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	... 10 common frames omitted
+
+2026-02-13T20:09:13.923+01:00  WARN 23939 --- [Mortgage Application] [PrometheusPushGatewayManager.PushGatewayTaskScheduler-1] [Mortgage Application,,] s.b.m.m.e.p.PrometheusPushGatewayManager : Unexpected exception thrown by POST of metrics to Prometheus Pushgateway
+
+java.io.IOException: Failed to push metrics to the Prometheus Pushgateway on http://localhost:9090: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:234) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.pushAdd(PushGateway.java:152) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	at org.springframework.boot.micrometer.metrics.export.prometheus.PrometheusPushGatewayManager.post(PrometheusPushGatewayManager.java:79) ~[spring-boot-micrometer-metrics-4.0.2.jar:4.0.2]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: java.io.IOException: Response code from http://localhost:9090/metrics/job/Mortgage+Application was 404, response body: 404 page not found
+
+	at io.prometheus.metrics.exporter.pushgateway.PushGateway.doRequest(PushGateway.java:219) ~[prometheus-metrics-exporter-pushgateway-1.3.6.jar:na]
+	... 10 common frames omitted
+
+2026-02-13T20:09:19.221+01:00  INFO 23939 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-13T20:09:19.224+01:00  INFO 23939 --- [Mortgage Application] [tomcat-shutdown] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-13T20:09:22.656+01:00  INFO 24093 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Starting MortgageApplication using Java 25.0.1 with PID 24093 (/Users/chitesh/work-space/assingment/mortgage-application/mortgage-service/target/classes started by chitesh in /Users/chitesh/work-space/assingment/mortgage-application)
+2026-02-13T20:09:22.658+01:00  INFO 24093 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-02-13T20:09:23.107+01:00  INFO 24093 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 1009 (http)
+2026-02-13T20:09:23.112+01:00  INFO 24093 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-13T20:09:23.112+01:00  INFO 24093 --- [Mortgage Application] [main] [Mortgage Application,,] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-13T20:09:23.130+01:00  INFO 24093 --- [Mortgage Application] [main] [Mortgage Application,,] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 453 ms
+2026-02-13T20:09:23.366+01:00  INFO 24093 --- [Mortgage Application] [main] [Mortgage Application,,] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-13T20:09:23.367+01:00  WARN 24093 --- [Mortgage Application] [main] [Mortgage Application,,] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-13T20:09:23.490+01:00  INFO 24093 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-13T20:09:23.642+01:00  INFO 24093 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2026-02-13T20:09:23.683+01:00  INFO 24093 --- [Mortgage Application] [main] [Mortgage Application,,] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 1009 (http) with context path '/'
+2026-02-13T20:09:23.688+01:00  INFO 24093 --- [Mortgage Application] [main] [Mortgage Application,,] com.myorg.mortgage.MortgageApplication   : Started MortgageApplication in 1.227 seconds (process running for 1.44)
+2026-02-13T20:09:25.181+01:00  INFO 24093 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-13T20:09:25.181+01:00  INFO 24093 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-13T20:09:25.182+01:00  INFO 24093 --- [Mortgage Application] [http-nio-1009-exec-1] [Mortgage Application,,] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-13T20:13:53.271+01:00  INFO 24093 --- [Mortgage Application] [SpringApplicationShutdownHook] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-13T20:13:53.276+01:00  INFO 24093 --- [Mortgage Application] [tomcat-shutdown] [Mortgage Application,,] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
