@@ -1,4 +1,4 @@
-## Mortgage Application
+## Mortgage Check Application
 This is an application which can provides the mortgage interest rates based on the period of loan. 
 Also with the help of this application you can calculate the feasibility of your mortgage loan and it will provide you with monthly cost.
 Only authorise user can access the application. This application also provides you easy access to signup and login.

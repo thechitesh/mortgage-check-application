@@ -10,7 +10,7 @@
 	</parent>
 
 	<groupId>com.myorg.mortgage</groupId>
-	<artifactId>mortgage-application</artifactId>
+	<artifactId>mortgage-check-application</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>mortgage-application</name>

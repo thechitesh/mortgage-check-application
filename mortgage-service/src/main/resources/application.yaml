@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: Mortgage Application
+    name: Mortgage Check Application
 
 
 management:
