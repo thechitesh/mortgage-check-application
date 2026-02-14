@@ -73,14 +73,6 @@ components:
           type: string
           format: date-time
 
-    Amount:
-      type: object
-      properties:
-        value:
-          type: number
-        currency:
-          type: string
-
     MortgageRequest:
       type: object
       properties:
@@ -100,7 +92,6 @@ components:
           type: boolean
         monthlyCost:
           type: number
-#          $ref: '#/components/schemas/Amount'
 
     Error:
       type: object
