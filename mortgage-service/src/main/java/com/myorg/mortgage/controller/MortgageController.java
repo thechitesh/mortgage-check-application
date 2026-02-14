@@ -1,17 +1,17 @@
 package com.myorg.mortgage.controller;
 
 import com.myorg.mortgage.app.api.ApiApi;
-import com.myorg.mortgage.app.model.InterestRateDto;
-import com.myorg.mortgage.app.model.InterestRateResponseDto;
-import com.myorg.mortgage.app.model.MortgageRequestDto;
-import com.myorg.mortgage.app.model.MortgageResponseDto;
+import com.myorg.mortgage.app.model.*;
 import com.myorg.mortgage.service.MortgageService;
+import io.github.resilience4j.ratelimiter.RequestNotPermitted;
 import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+
+import static org.springframework.http.HttpStatus.TOO_MANY_REQUESTS;
 
 @RestController
 @RequiredArgsConstructor
@@ -34,14 +34,12 @@ public class MortgageController implements ApiApi {
         return ResponseEntity.ok(mortgageService.calculateMortgage(mortgageRequestDto));
     }
 
-    public ResponseEntity<InterestRateResponseDto> getMortgageInterestRateFallback(
-            io.github.resilience4j.ratelimiter.RequestNotPermitted ex) {
-        return ResponseEntity.status(org.springframework.http.HttpStatus.TOO_MANY_REQUESTS).build();
+    public ResponseEntity<ErrorDto> getMortgageInterestRateFallback(RequestNotPermitted ex) {
+        return ResponseEntity.status(TOO_MANY_REQUESTS).body(ErrorDto.builder().message("Too many request").build());
     }
 
-    public ResponseEntity<MortgageResponseDto> checkMortgageFallback(MortgageRequestDto mortgageRequestDto,
-            io.github.resilience4j.ratelimiter.RequestNotPermitted ex) {
-        return ResponseEntity.status(org.springframework.http.HttpStatus.TOO_MANY_REQUESTS).build();
+    public ResponseEntity<ErrorDto> checkMortgageFallback(MortgageRequestDto mortgageRequestDto, RequestNotPermitted ex) {
+        return ResponseEntity.status(TOO_MANY_REQUESTS).body(ErrorDto.builder().message("Too many request").build());
     }
 
 }
