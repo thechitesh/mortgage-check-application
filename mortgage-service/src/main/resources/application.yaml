@@ -45,8 +45,5 @@ logging:
   file:
     name: logs/spring-boot-application.log
 
-jwt:
-  secretKey: 48a868a4042f634ac04a117f00a87202131dd7c46c4b32c4acb3edc5e15f4511
-
 mortgage:
   max-multiplier: 4

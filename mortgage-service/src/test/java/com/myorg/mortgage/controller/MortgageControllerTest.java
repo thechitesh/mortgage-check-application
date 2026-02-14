@@ -5,7 +5,6 @@ import com.myorg.mortgage.app.model.InterestRateDto;
 import com.myorg.mortgage.app.model.MortgageRequestDto;
 import com.myorg.mortgage.app.model.MortgageResponseDto;
 import com.myorg.mortgage.exception.GlobalExceptionHandler;
-import com.myorg.mortgage.service.AuthenticationService;
 import com.myorg.mortgage.service.MortgageService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -30,7 +29,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
 @AutoConfigureMockMvc(addFilters = false)
-@TestPropertySource(locations = "classpath:application-test.yaml")
+//@TestPropertySource(locations = "classpath:application-test.yaml")
 @Import(GlobalExceptionHandler.class)
 class MortgageControllerTest {
 
@@ -40,12 +39,8 @@ class MortgageControllerTest {
     @MockitoBean
     private MortgageService mortgageService;
 
-    @MockitoBean
-    private AuthenticationService authenticationService;
-
     @Test
     void test_GetInterestRates() throws Exception {
-        when(authenticationService.isUserAuthenticated()).thenReturn(true);
         when(mortgageService.getInterestRates()).thenReturn(List.of(InterestRateDto.builder().interestRate(BigDecimal.ONE).build()));
         mockMvc.perform(get("/api/interest-rates").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
@@ -60,7 +55,6 @@ class MortgageControllerTest {
         MortgageRequestDto requestDto = new MortgageRequestDto(amount, 10, amount, amount);
         MortgageResponseDto responseDto = new MortgageResponseDto(true, BigDecimal.ONE);
 
-        when(authenticationService.isUserAuthenticated()).thenReturn(true);
         when(mortgageService.calculateMortgage(requestDto)).thenReturn(responseDto);
 
         mockMvc.perform(post("/api/mortgage-check")

@@ -40,25 +40,6 @@
 				<artifactId>mortgage-contract</artifactId>
 				<version>${project.version}</version>
 			</dependency>
-
-			<!-- Security Config -->
-			<dependency>
-				<groupId>io.jsonwebtoken</groupId>
-				<artifactId>jjwt-api</artifactId>
-				<version>${jsonwebtoken.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>io.jsonwebtoken</groupId>
-				<artifactId>jjwt-impl</artifactId>
-				<version>${jsonwebtoken.version}</version>
-				<scope>runtime</scope>
-			</dependency>
-			<dependency>
-				<groupId>io.jsonwebtoken</groupId>
-				<artifactId>jjwt-jackson</artifactId>
-				<version>${jsonwebtoken.version}</version>
-				<scope>runtime</scope>
-			</dependency>
 			<dependency>
 				<groupId>io.micrometer</groupId>
 				<artifactId>micrometer-core</artifactId>
