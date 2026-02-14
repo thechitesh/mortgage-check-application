@@ -1,22 +1,18 @@
 ## Mortgage Check Application
 This is an application which can provides the mortgage interest rates based on the period of loan. 
 Also with the help of this application you can calculate the feasibility of your mortgage loan and it will provide you with monthly cost.
-Only authorise user can access the application. This application also provides you easy access to signup and login.
 Following are the list of endpoints which can be used to access features of this application.
 
-#### User Endpoints
-Swagger Contract can be found here [Link](./mortgage-contract/src/main/resources/app-user-contract.yaml)
-
-- /user/register (can be used to signup)
-- /user/login (can be used to login and get jwt access token)
-
-`User can login with username and password`
 
 ### Mortgage Endpoints 
 Swagger Contract can be found here [Link](./mortgage-contract/src/main/resources/mortgage-contract.yaml)
  
 - /api/interest-rates (Provides the interest rates)
 - /api/mortgage-check (Calculates the feasibility of Mortgage)
+
+
+### Rate Limit
+- The endpoints allows you to make 10 request per second. 
 
 
 ## Technical Details
