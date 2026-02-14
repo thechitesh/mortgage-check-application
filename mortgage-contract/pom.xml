@@ -108,35 +108,6 @@
                             </configOptions>
                         </configuration>
                     </execution>
-
-                    <execution>
-                        <id>generate-user-auth-api</id>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                        <configuration>
-                            <inputSpec>${project.basedir}/src/main/resources/app-user-contract.yaml</inputSpec>
-                            <generatorName>spring</generatorName>
-                            <library>spring-boot</library>
-                            <apiPackage>com.myorg.mortgage.auth.api</apiPackage>
-                            <modelPackage>com.myorg.mortgage.auth.model</modelPackage>
-                            <modelNameSuffix>Dto</modelNameSuffix>
-                            <configOptions>
-                                <useJakartaEe>true</useJakartaEe>
-                                <withXml>false</withXml>
-                                <dateLibrary>java8</dateLibrary>
-                                <booleanGetterPrefix>is</booleanGetterPrefix>
-                                <serializableModel>true</serializableModel>
-                                <interfaceOnly>true</interfaceOnly>
-                                <additionalModelTypeAnnotations>
-                                    @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
-                                    @lombok.Builder(toBuilder = true)
-                                    @lombok.AllArgsConstructor
-                                    @lombok.NoArgsConstructor
-                                </additionalModelTypeAnnotations>
-                            </configOptions>
-                        </configuration>
-                    </execution>
                 </executions>
             </plugin>
         </plugins>

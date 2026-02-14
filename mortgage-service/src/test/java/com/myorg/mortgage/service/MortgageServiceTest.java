@@ -1,6 +1,5 @@
 package com.myorg.mortgage.service;
 
-import com.myorg.mortgage.app.model.AmountDto;
 import com.myorg.mortgage.app.model.InterestRateDto;
 import com.myorg.mortgage.app.model.MortgageRequestDto;
 import com.myorg.mortgage.app.model.MortgageResponseDto;
@@ -125,10 +124,6 @@ class MortgageServiceTest {
         }
 
         return MortgageResponseDto.builder().feasible(feasible).monthlyCost(monthly).build();
-    }
-
-    private static AmountDto buildAmount(BigDecimal value) {
-        return AmountDto.builder().value(value).currency("EUR").build();
     }
 
     private List<InterestRate> getInterestRates() {

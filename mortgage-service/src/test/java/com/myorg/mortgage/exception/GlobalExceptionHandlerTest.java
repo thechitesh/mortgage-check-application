@@ -1,7 +1,6 @@
 package com.myorg.mortgage.exception;
 
 import com.myorg.mortgage.app.model.ErrorDto;
-import io.jsonwebtoken.JwtException;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.http.HttpStatus;
@@ -18,18 +17,6 @@ class GlobalExceptionHandlerTest {
     private GlobalExceptionHandler globalExceptionHandler = new GlobalExceptionHandler();
 
     private final WebRequest webRequest = Mockito.mock(ServletWebRequest.class);
-
-    @Test
-    public void testHandleAuthExceptions() {
-        Exception exception = new JwtException("JWT error");
-        ResponseEntity<Object> response = globalExceptionHandler.handleAuthExceptions(exception, webRequest);
-
-        assertEquals(HttpStatus.UNAUTHORIZED, response.getStatusCode());
-        ErrorDto error = (ErrorDto) response.getBody();
-        assertNotNull(error);
-        assertEquals("JWT error", error.getMessage());
-        assertEquals("ERR-001", error.getCode());
-    }
 
     @Test
     public void testHandleRuntimeExceptions() {
