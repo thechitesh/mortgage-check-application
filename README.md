@@ -1,6 +1,6 @@
 ## Mortgage Check Application
 This is an application which can provides the mortgage interest rates based on the period of loan. 
-Also with the help of this application you can calculate the feasibility of your mortgage loan and it will provide you with monthly cost.
+Also with the help of this application you can calculate the feasibility of your mortgage loan, and it will provide you with monthly cost.
 Following are the list of endpoints which can be used to access features of this application.
 
 
@@ -20,7 +20,6 @@ This application is build on Spring Boot Framework which uses embedded tomcat se
 - Java 25
 - Spring Boot 4.0.2
 - Maven
-- JWT Authentication
 - Prometheus
 - Grafana
 - Docker
@@ -36,11 +35,8 @@ Starting the application.
 - run `docker-compose up -d` command from root directory.
 - cd mortgage-service
 - run `mvn spring-boot:run`
-- Import postman collection from this location [Link](./postman/Mortgage-API.postman_collection.json)
-- Since the mortgage endpoints are secured with JWT token. You need to run the postman collection from `User-Login` folder.
-- With the login endpoint you get the authToken which will be stored in the postman env variable. This will be automatically added in subsequent calls of mortgage api.
 ```
-To use visualisation go to the Grafana section
+To use visualization go to the Grafana section
 
 The alternate way is to use the shell file ./start.sh present in the root directory. 
 Provide the execution right to the ./start.sh and the run it. Following commands are for your rescue. Make sure you are in root directory of the project.
@@ -76,7 +72,7 @@ Further Grafana can use to have a better visualization. You can access Grafana d
 - Now you can import the mortgage dashboard, saved in this project folder at location [Link](./dashboards/Mortgage%20Dashboard-1741783492490.json)
 - Now you see a dashboard which gives up CPU Activity, Request Count and exception counts.
 
-![img.png](dashboards/img.png)
+![img.png](dashboards/img_1.png)
 
 ## References
 #https://spring.io/projects/spring-boot
